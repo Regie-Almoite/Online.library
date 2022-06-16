@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Almoite | B12Exercise 2B</title>
+        <!-- external css -->
+        <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="container vh-100">
+            <div
+                class="checkout vh-100 d-flex flex-column justify-content-center"
+            >
+                <h1 class="text-center text-light">Checkout Form</h1>
+                <table
+                    class="table table-borderless checkoutTable text-dark checkout"
+                >
+                    <form action="" method="">
+                        <tr>
+                            <td class="p-3">
+                                <label for="name" class="form-label fs-4"
+                                    >Name</label
+                                >
+                            </td>
+                            <td class="p-3">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    class="form-control"
+                                    id="name"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">
+                                <label for="address" class="form-label fs-4"
+                                    >Address</label
+                                >
+                            </td>
+                            <td class="p-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="address"
+                                    id="address"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">
+                                <label for="region" class="form-label fs-4"
+                                    >Region</label
+                                >
+                            </td>
+                            <td class="p-3">
+                                <select
+                                    name="region"
+                                    class="form-select"
+                                    id="region"
+                                    required
+                                >
+                                    <option value="">Select your region</option>
+                                    <option value="regionOne">Region I</option>
+                                    <option value="regionTwo">Region II</option>
+                                    <option value="regionThree">
+                                        Region III
+                                    </option>
+                                    <option value="regionFour">
+                                        Region IV
+                                    </option>
+                                    <option value="regionFive">Region V</option>
+                                    <option value="regionSix">Region VI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3">
+                                <label for="contact" class="form-label fs-4"
+                                    >Contact Number</label
+                                >
+                            </td>
+                            <td class="p-3">
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    name="contact"
+                                    id="contact"
+                                    required
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 fs-4">Payment Method</td>
+                            <td class="p-3">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="paymentMethod"
+                                    id="cod"
+                                    value="cod"
+                                />
+                                <label for="cod" class="form-check-label"
+                                    >Cash on Delivery</label
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="p-3">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="paymentMethod"
+                                    id="masterCard"
+                                    value="masterCard"
+                                />
+                                <label for="masterCard" class="form-check-label"
+                                    >Master Card</label
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="p-3">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="paymentMethod"
+                                    id="visa"
+                                    value="visa"
+                                />
+                                <label for="visa" class="form-check-label"
+                                    >Visa</label
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="p-3">
+                                <input
+                                    type="radio"
+                                    class="form-check-input"
+                                    name="paymentMethod"
+                                    id="americanExpress"
+                                    value="americanExpress"
+                                />
+                                <label
+                                    for="americanExpress"
+                                    class="form-check-label"
+                                    >American Express</label
+                                >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="p-3">
+                                <input
+                                    type="submit"
+                                    class="btn btn-primary"
+                                    value="Place Order"
+                                />
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
